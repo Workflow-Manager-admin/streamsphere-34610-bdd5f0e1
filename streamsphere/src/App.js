@@ -9,32 +9,13 @@ import Sidebar from './components/Layout/Sidebar';
 // Context Providers
 import { AuthProvider } from './context/AuthContext';
 
-// Placeholder page components (to be implemented later)
+// Import MainFeed component
+import MainFeed from './components/Recommendations/MainFeed';
+
+// Page components
 const HomePage = () => (
   <div className="page-content">
-    <div className="video-grid">
-      {/* Placeholder for video grid */}
-      <div className="video-card">
-        <div className="video-thumbnail">
-          <div className="video-duration">10:24</div>
-        </div>
-        <div className="video-info">
-          <h3 className="video-title">Sample Video Title</h3>
-          <p className="video-channel">Channel Name</p>
-          <p className="video-meta">1.2M views • 2 days ago</p>
-        </div>
-      </div>
-      <div className="video-card">
-        <div className="video-thumbnail">
-          <div className="video-duration">15:30</div>
-        </div>
-        <div className="video-info">
-          <h3 className="video-title">Another Video Title</h3>
-          <p className="video-channel">Different Channel</p>
-          <p className="video-meta">850K views • 1 week ago</p>
-        </div>
-      </div>
-    </div>
+    <MainFeed />
   </div>
 );
 
